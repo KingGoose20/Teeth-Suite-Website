@@ -140,7 +140,7 @@ body .et_pb_bg_layout_dark .et_pb_post p {
 }
 
 .rounded_rectangle:hover {
-    background-color: #16a39e !important
+    background-color: #d11d00 !important
 }
 
 #top-header a:hover {
@@ -182,7 +182,7 @@ a {
 }
 
 a:hover {
-    color: #16a39e
+    color: #d11d00
 }
 
 #et-info {
@@ -198,7 +198,8 @@ a:hover {
 }
 
 #top-menu-nav>ul>li>a:hover {
-    background-color: #16a39e;
+    background-color: #d11d00;
+    border: 1.5px solid rgb(50, 50, 50);
     color: white;
     opacity: 1
 }
@@ -209,17 +210,16 @@ a:hover {
 }
 
 #top-menu li.current_page_item:not(.other-options) a:not(.other-options) {
-    background-color: #16a39e;
+    background-color: #d11d00;
     color: white;
     opacity: 1;
-    padding: 0px 15px 12px 15px !important;
+    border: 1.5px solid rgb(50, 50, 50);
     border-radius: 6px;
-    padding-top: 10px !important
 }
 
 #top-menu-nav>ul>li>a {
     margin-bottom: 55px;
-    padding: 12px 15px 12px 15px;
+    border: 1.5px solid rgb(104, 104, 104);
     border-radius: 6px;
     opacity: 1
 }
