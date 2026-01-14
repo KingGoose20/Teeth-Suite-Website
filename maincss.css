@@ -1214,6 +1214,7 @@
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/raleway/v36/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCK.woff2) format('woff2');
 }
+
 .wp-block-audio :where(figcaption) {
     color: #555;
     font-size: 13px;
@@ -3676,7 +3677,7 @@ header.et-l.et-l--header:after {
 
     .et_pb_gutters3 .et_pb_column_1_3,
     .et_pb_gutters3.et_pb_row .et_pb_column_1_3 {
-        width: 29.6667%
+        width: 19.5%;
     }
 
     .et_pb_gutters3 .et_pb_column_1_3 .et_pb_module,
@@ -5089,6 +5090,8 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header {
 }
 
 .et_mobile_menu li a {
+    font-family: 'Arvo';
+    font-weight: 400;
     border-bottom: 1px solid rgba(0, 0, 0, .03);
     color: #666;
     padding: 10px 5%;
@@ -5405,8 +5408,7 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header {
 }
 
 .et_pb_row {
-    width: 80%;
-    max-width: 1080px;
+    width: 90vw;
     margin: auto;
     position: relative
 }
@@ -6612,10 +6614,17 @@ body.uiwebview .section_has_divider {
 @media (min-width:980px) {
     .service-row {
         border-bottom: 1.5px solid #000000;
+        padding-bottom: 37px;
+        margin-bottom: 10px;
     }
 
     .services-dropdown {
         max-height: 75vh;
         overflow-y: scroll;
     }
+}
+
+.service-column {
+    margin-right: 0 !important;
+    width: 25% !important;
 }

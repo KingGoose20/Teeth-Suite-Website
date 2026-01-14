@@ -89,7 +89,7 @@ function getDirDepth() {
   const path = window.location.pathname;
   const withoutFile = path.replace(/[^\/]+$/, "");
   const parts = withoutFile.split("/").filter(Boolean);
-  if (parts[0] === "Coast-Gastroenterology-Website") {
+  if (parts[0] === "Teeth-Suite-Website") {
     parts.splice(0, 1);
   }
   return parts.length;
