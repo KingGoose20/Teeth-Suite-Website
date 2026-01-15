@@ -92,6 +92,7 @@ function getDirDepth() {
   if (parts[0] === "Teeth-Suite-Website") {
     parts.splice(0, 1);
   }
+  console.log(parts);
   return parts.length;
 }
 
