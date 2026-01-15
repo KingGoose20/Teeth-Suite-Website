@@ -60,6 +60,7 @@ fetch(`${headerDir}/header.html`)
     // PREPEND "../" BASED ON DIRECTORY DEPTH
     // -----------------------------------------
     const depth = getDirDepth(); // calculate depth
+    console.log("Header depth:", depth);
     prependDotsToLinksAndImages(container, depth); // rewrite all <a> hrefs
 
     // Insert modified header
@@ -87,8 +88,11 @@ fetch(`${headerDir}/header.html`)
 // -------- Helper functions ----------
 function getDirDepth() {
   const pathH = window.location.pathname;
+  console.log(pathH);
   const withoutFileH = pathH.replace(/[^\/]+$/, "");
+  console.log(withoutFileH);
   const partsH = withoutFileH.split("/").filter(Boolean);
+  console.log(partsH);
   if (partsH[0] === "Teeth-Suite-Website") {
     partsH.splice(0, 1);
   }
