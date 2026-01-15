@@ -61,6 +61,7 @@ fetch(`${headerDir}/header.html`)
     // -----------------------------------------
     console.log("I ANM HERE");
     const depth = getDirDepth(); // calculate depth
+    console.log("Depth: ", depth);
     prependDotsToLinksAndImages(container, depth); // rewrite all <a> hrefs
 
     // Insert modified header
