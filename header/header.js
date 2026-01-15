@@ -59,6 +59,7 @@ fetch(`${headerDir}/header.html`)
     // -----------------------------------------
     // PREPEND "../" BASED ON DIRECTORY DEPTH
     // -----------------------------------------
+    console.log("I ANM HERE");
     const depth = getDirDepth(); // calculate depth
     prependDotsToLinksAndImages(container, depth); // rewrite all <a> hrefs
 
