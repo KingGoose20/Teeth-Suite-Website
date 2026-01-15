@@ -3615,6 +3615,10 @@ header.et-l.et-l--header:after {
         margin-right: 5.5%
     }
 
+    .about-us {
+        margin-right: 3.3333% !important;
+    }
+
     .et_pb_gutters3 .et_pb_column_4_4,
     .et_pb_gutters3.et_pb_row .et_pb_column_4_4 {
         width: 100%
@@ -3678,6 +3682,14 @@ header.et-l.et-l--header:after {
     .et_pb_gutters3 .et_pb_column_1_3,
     .et_pb_gutters3.et_pb_row .et_pb_column_1_3 {
         width: 19.5%;
+    }
+
+    .about-us {
+        width: 30% !important;
+    }
+
+    .about-us {
+        width: 30%;
     }
 
     .et_pb_gutters3 .et_pb_column_1_3 .et_pb_module,
@@ -6627,4 +6639,20 @@ body.uiwebview .section_has_divider {
 .service-column {
     margin-right: 0 !important;
     width: 25% !important;
+}
+
+.contact-us {
+    font-size: 50px;
+    border-radius: 10px;
+    border: 2.5px solid black;
+    padding: 20px 40px;
+    font-family: Arvo;
+    color: #d11d00;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.contact-us:hover {
+    background-color: #d11d00;
+    color: white;
+    transition: background-color 0.7s, color 0.7s;
 }
