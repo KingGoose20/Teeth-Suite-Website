@@ -86,13 +86,13 @@ fetch(`${headerDir}/header.html`)
 
 // -------- Helper functions ----------
 function getDirDepth() {
-  const path = window.location.pathname;
-  const withoutFile = path.replace(/[^\/]+$/, "");
-  const parts = withoutFile.split("/").filter(Boolean);
-  if (parts[0] === "Teeth-Suite-Website") {
-    parts.splice(0, 1);
+  const pathH = window.location.pathname;
+  const withoutFileH = pathH.replace(/[^\/]+$/, "");
+  const partsH = withoutFileH.split("/").filter(Boolean);
+  if (partsH[0] === "Teeth-Suite-Website") {
+    partsH.splice(0, 1);
   }
-  return parts.length;
+  return partsH.length;
 }
 
 function prependDotsToLinksAndImages(container, depth) {
