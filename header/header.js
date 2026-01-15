@@ -86,6 +86,7 @@ fetch(`${headerDir}/header.html`)
 
 // -------- Helper functions ----------
 function getDirDepth() {
+  console.log("HERE");
   const path = window.location.pathname;
   const withoutFile = path.replace(/[^\/]+$/, "");
   const parts = withoutFile.split("/").filter(Boolean);
