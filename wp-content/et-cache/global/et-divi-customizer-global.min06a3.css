@@ -20,11 +20,11 @@ body .et_pb_bg_layout_dark .et_pb_post p {
 }
 
 .et_secondary_nav_enabled #page-container #top-header {
-    background-color: #262262 !important
+    background-color: #8c0808 !important
 }
 
 #et-secondary-nav li ul {
-    background-color: #262262
+    background-color: #8c0808
 }
 
 #main-footer {
@@ -86,11 +86,11 @@ body .et_pb_bg_layout_dark .et_pb_post p {
     }
 
     .et_fixed_nav #page-container .et-fixed-header#top-header {
-        background-color: #262262 !important
+        background-color: #8c0808 !important
     }
 
     .et_fixed_nav #page-container .et-fixed-header#top-header #et-secondary-nav li ul {
-        background-color: #262262
+        background-color: #8c0808
     }
 }
 
@@ -134,8 +134,8 @@ body .et_pb_bg_layout_dark .et_pb_post p {
 }
 
 .et_mobile_menu li a:hover {
-    opacity: 0.7;
-    background-color: #262262;
+    opacity: 0.9;
+    background-color: #8c0808;
     color: white
 }
 
@@ -177,12 +177,14 @@ body .et_pb_bg_layout_dark .et_pb_post p {
 }
 
 a {
-    color: #1a779d;
-    text-decoration: none
+    color: #000000;
+    text-decoration: none;
+    transition: color .2s ease;
 }
 
 a:hover {
-    color: #d11d00
+    color: #d11d00;
+    transition: all .2s ease;
 }
 
 #et-info {
