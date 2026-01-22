@@ -6605,6 +6605,8 @@ body.uiwebview .section_has_divider {
     .heading-text {
         font-size: 45px;
         line-height: 50px;
+        width: 100%;
+        text-align: center;
     }
 }
 
