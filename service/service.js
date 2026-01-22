@@ -15,15 +15,15 @@ fetch(`${serviceDirS}/service.html`)
             switch (activeMenuInt) {
                 case 1:
                     start.classList.add("et_pb_section_3");
-                    container.querySelectorAll('.wp-image').forEach(img => {
-                        img.style.border = "2px solid black";  // change colour/size as needed
-                    });
 
                     break;
                 case 2:
                     start.classList.add("et_pb_section_4");
                     break;
             }
+            container.querySelectorAll('.wp-image').forEach(img => {
+                img.style.border = "2px solid black";  // change colour/size as needed
+            });
         }
 
         // -----------------------------------------
