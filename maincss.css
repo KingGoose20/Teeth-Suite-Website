@@ -6625,7 +6625,7 @@ body.uiwebview .section_has_divider {
     padding: 20px 40px;
     font-family: Arvo;
     color: #d11d00;
-    transition: background-color 0.7s, color 0.7s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 @media screen and (max-width: 980px) {
@@ -6667,5 +6667,5 @@ body.uiwebview .section_has_divider {
 .contact-us:hover {
     background-color: #d11d00;
     color: white;
-    transition: background-color 0.7s, color 0.7s;
+    transition: background-color 0.5s, color 0.5s;
 }
