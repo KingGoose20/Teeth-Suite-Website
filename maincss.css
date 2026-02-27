@@ -3616,7 +3616,7 @@ header.et-l.et-l--header:after {
     }
 
     .about-us {
-        margin-right: 3.3333% !important;
+        margin-right: 3% !important;
     }
 
     .et_pb_gutters3 .et_pb_column_4_4,
@@ -3685,11 +3685,7 @@ header.et-l.et-l--header:after {
     }
 
     .about-us {
-        width: 30% !important;
-    }
-
-    .about-us {
-        width: 30%;
+        width: 22% !important;
     }
 
     .et_pb_gutters3 .et_pb_column_1_3 .et_pb_module,
@@ -3764,7 +3760,10 @@ header.et-l.et-l--header:after {
 
 #et-secondary-menu li,
 #top-menu li {
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-align: center;
+    width: 10vw;
+    min-width: 150px;
 }
 
 .nav li ul,
@@ -4092,7 +4091,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #et-top-navigation {
-    float: right
+    width: 100%;
 }
 
 #top-menu li li {
@@ -4440,7 +4439,6 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header {
     .et_fullwidth_nav #main-header .container {
         width: 100%;
         max-width: 100%;
-        padding-right: 32px;
         padding-left: 30px
     }
 
@@ -4453,7 +4451,7 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header {
     }
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 750px) {
 
     .et_fixed_nav.et_show_nav.et_secondary_nav_enabled #page-container,
     .et_fixed_nav.et_show_nav #page-container {
@@ -6595,13 +6593,22 @@ body.uiwebview .section_has_divider {
 .heading-text {
     z-index: 5;
     white-space: nowrap;
-    font-size: 60px;
+    font-size: 90px;
     line-height: 65px;
     color: rgb(255, 255, 255);
     font-family: Arvo;
 }
 
 @media screen and (max-width: 980px) {
+    .heading-text {
+        font-size: 75px;
+        line-height: 60px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
     .heading-text {
         font-size: 45px;
         line-height: 50px;

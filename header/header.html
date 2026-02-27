@@ -1,16 +1,8 @@
 <header id="main-header" data-height-onload="92">
     <div class="container clearfix et_menu_container">
-        <div class="logo_container">
-            <span class="logo_helper"></span>
-            <a href="index.html">
-                <img src="images/TS_Images/TSLogoHeader.jpg" width="332" height="84"
-                    alt="Dr Griff Walker, Gold Coast Gastroenterologist, Queensland." id="logo"
-                    data-height-percentage="61" style="border: 1.5px solid #000000; border-radius: 15px;" />
-            </a>
-        </div>
         <div id="et-top-navigation" data-height="92" data-fixed-height="40">
             <nav id="top-menu-nav">
-                <ul id="top-menu" class="nav">
+                <ul id="top-menu" class="nav" style="width: 100vw;">
                     <li id="menu-item-1"
                         class="menu-item menu-item-type-post_type menu-item-object-page page_item menu-item-1">
                         <a href="index.html" aria-current="page">HOME</a>
@@ -46,7 +38,7 @@
                             </li>
                             <li id="menu-item-9"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9">
-                                <a href="services/fluoride/index.html">FLUORIDE
+                                <a href="services/implants/index.html">IMPLANTS
                                     </a>
                             </li>
                             <li id="menu-item-10"
@@ -91,6 +83,30 @@
     </ul>
 </div> <!-- #main-header -->
 <style>
+    @media screen and (min-width: 981px) {
+        #main-header .et_menu_container {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        #main-header #top-menu-nav {
+            width: 100%;
+        }
+
+        #main-header #top-menu {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: none;
+            margin: 0 auto;
+        }
+
+        #main-header #top-menu>li {
+            float: none;
+        }
+    }
+
     @media screen and (min-width: 980px) {
         .mobile-menu.open {
             display: none !important;
@@ -126,7 +142,7 @@
         color: #333;
     }
 
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 750px) {
         .current-menu-item>a {
             color: #d11d00 !important;
         }
