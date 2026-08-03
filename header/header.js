@@ -3,7 +3,7 @@ const scriptH = document.currentScript;
 const activeMenuH = scriptH.dataset.activeMenuH;
 const headerDir = scriptPathH.substring(0, scriptPathH.lastIndexOf("/"));
 
-fetch(`${headerDir}/header.html`)
+fetch(`${headerDir}/header.html?v=20260803b`)
   .then((r) => r.text())
   .then((html) => {
     const container = document.createElement("div");
@@ -75,11 +75,10 @@ fetch(`${headerDir}/header.html`)
       const pageContent = document.getElementById("page-container");
 
       if (headerEl && pageContent) {
-        // Set page padding so content is not hidden
-        const headerHeight = headerEl.offsetHeight;
-        pageContent.style.paddingTop = headerHeight + "px";
+        // The shared header is sticky and remains in normal document flow.
+        // Avoid adding a second offset that would create a large blank band.
+        pageContent.style.paddingTop = "0";
 
-        // Now attach scroll listener safely
         initHideHeaderOnScroll(headerEl);
       }
     });
@@ -108,8 +107,8 @@ function prependDotsToLinksAndImages(container, depth) {
 
     if (!href) return;
 
-    // ignore absolute links
-    if (/^(https?:)?\/\//.test(href)) return;
+    // Ignore absolute links and non-HTTP action schemes such as tel/mailto.
+    if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return;
 
     // ignore leading slash (root-relative)
     if (href.startsWith("/")) return;

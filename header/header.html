@@ -2,7 +2,7 @@
     <div class="container clearfix et_menu_container">
         <div id="et-top-navigation" data-height="92" data-fixed-height="40">
             <nav id="top-menu-nav">
-                <ul id="top-menu" class="nav" style="width: 100vw;">
+                <ul id="top-menu" class="nav">
                     <li id="menu-item-1"
                         class="menu-item menu-item-type-post_type menu-item-object-page page_item menu-item-1">
                         <a href="index.html" aria-current="page">HOME</a>
@@ -83,27 +83,102 @@
     </ul>
 </div> <!-- #main-header -->
 <style>
+    #main-header {
+        background: #ffffff;
+        border-bottom: 1px solid rgba(20, 20, 20, 0.14);
+        box-shadow: 0 3px 16px rgba(20, 20, 20, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+
+    #main-header .et_menu_container {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        min-height: 108px;
+        display: flex;
+        align-items: center;
+    }
+
+    #main-header #et-top-navigation {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        min-height: 108px;
+        padding: 12px 24px !important;
+    }
+
+    #main-header #top-menu-nav,
+    #main-header #top-menu {
+        width: 100% !important;
+    }
+
+    #main-header #top-menu-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #main-header #top-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #main-header #top-menu > li {
+        float: none;
+        padding-right: 0;
+    }
+
+    #main-header #top-menu > li > a {
+        width: 138px;
+        min-height: 42px;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-bottom: 0 !important;
+        border: 1px solid #767676;
+        border-radius: 8px;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 13px;
+        line-height: 1.1;
+    }
+
+    #main-header #top-menu > li.current-menu-item > a,
+    #main-header #top-menu > li.current_page_item > a,
+    #main-header #top-menu > li.current-menu-ancestor > a {
+        background: #d11d00;
+        color: #ffffff;
+        border-color: #8f1808;
+    }
+
+    #main-header #top-menu > li > a:hover,
+    #main-header #top-menu > li > a:focus-visible {
+        opacity: 1;
+        background: #f5e9e5;
+        color: #8f1808;
+    }
+
+    #main-header #top-menu > li.current-menu-item > a:hover,
+    #main-header #top-menu > li.current-menu-item > a:focus-visible,
+    #main-header #top-menu > li.current_page_item > a:hover,
+    #main-header #top-menu > li.current_page_item > a:focus-visible,
+    #main-header #top-menu > li.current-menu-ancestor > a:hover,
+    #main-header #top-menu > li.current-menu-ancestor > a:focus-visible {
+        background: #b91900;
+        color: #ffffff;
+    }
+
     @media screen and (min-width: 981px) {
-        #main-header .et_menu_container {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        #main-header #top-menu-nav {
-            width: 100%;
-        }
-
         #main-header #top-menu {
-            width: 100% !important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            float: none;
-            margin: 0 auto;
-        }
-
-        #main-header #top-menu>li {
-            float: none;
+            flex-wrap: nowrap;
         }
     }
 
@@ -142,9 +217,36 @@
         color: #333;
     }
 
+    @media screen and (max-width: 980px) {
+        #main-header #et-top-navigation {
+            padding: 10px 16px !important;
+        }
+
+        #main-header #top-menu {
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        #main-header #top-menu > li > a {
+            width: 132px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #main-header #top-menu > li {
+            flex: 1 1 calc(50% - 8px);
+        }
+
+        #main-header #top-menu > li > a {
+            width: 100%;
+        }
+    }
+
     @media screen and (max-width: 750px) {
-        .current-menu-item>a {
-            color: #d11d00 !important;
+        .current-menu-item>a,
+        .current_page_item>a,
+        .current-menu-ancestor>a {
+            color: #fff !important;
         }
     }
 </style>

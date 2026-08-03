@@ -55,8 +55,8 @@ function prependDotsToLinksAndImages(container, depth) {
 
         if (!href) return;
 
-        // ignore absolute links
-        if (/^(https?:)?\/\//.test(href)) return;
+        // Ignore absolute links and non-HTTP action schemes such as tel/mailto.
+        if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)) return;
 
         // ignore leading slash (root-relative)
         if (href.startsWith("/")) return;

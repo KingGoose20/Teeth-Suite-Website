@@ -33,7 +33,8 @@
         ignoreList = ignoreList + ', ' + settings.ignore;
       }      var $allVideos = $(this).find(selectors.join(','));
       $allVideos = $allVideos.not('object object'); // SwfObj conflict patch
-      $allVideos = $allVideos.not(ignoreList); // Disable FitVids on this video.      $allVideos.each(function(){
+      $allVideos = $allVideos.not(ignoreList); // Disable FitVids on this video.
+      $allVideos.each(function(){
         var $this = $(this);
         if($this.parents(ignoreList).length > 0) {
           return; // Disable FitVids on this video.
